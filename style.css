@@ -14,6 +14,7 @@ body{
     color:gray;
     overflow: hidden;
     border: 0.5em solid #000;
+    cursor: pointer;
 }
 
 circle{
