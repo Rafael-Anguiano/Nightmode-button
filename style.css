@@ -2,7 +2,7 @@ body{
     background-color: #000
 }
 
-div{
+.default{
     background-color:#23b1e0;
     border-radius:10em;
     width:20em;
@@ -114,12 +114,12 @@ star:last-child{
 }
 
 
-div:hover{
+.clicked{
     background-color: #252850;
     color: #252525;
 }
 
-div:hover circle {
+.clicked circle {
     margin-left: 4.5em;
     transform: rotate(360deg);
     background-color: gray;
@@ -127,15 +127,15 @@ div:hover circle {
         0 0 1em 0.1em lightslategray;
 }
 
-div:hover hole {
+.clicked hole {
     background-color: #3f3f3fA0;
 }
 
-div:hover clouds{
+.clicked clouds{
     margin-top:10em;
 }
 
-div:hover stars{
+.clicked stars{
     margin-top: 0em;
     margin-left: 1em;
 }

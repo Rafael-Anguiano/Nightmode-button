@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
+        <div id="nightmode" class='default'>
             <stars>
                 <star></star>
                 <star></star>
@@ -21,5 +21,10 @@
             </circle>
             <clouds></clouds>
         </div>
+        <script>
+            document.getElementById('nightmode').addEventListener("click", function() {
+                this.classList.toggle("clicked");
+            });
+        </script>
     </body>
 </html>
