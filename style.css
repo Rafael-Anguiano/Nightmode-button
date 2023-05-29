@@ -1,0 +1,142 @@
+body{
+    background-color: #000
+}
+
+div{
+    background-color:#23b1e0;
+    border-radius:10em;
+    width:20em;
+    height:10em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 1s;
+    color:gray;
+    overflow: hidden;
+    border: 0.5em solid #000;
+}
+
+circle{
+    aspect-ratio: 1/1;
+    background-color: #ffff00;
+    height:8.5rem;
+    margin-left: 1em;
+    border-radius:50%;
+    box-shadow: inset -0.5em -0.5em 2em #ffa500,
+        0 0 1em 0.25em #ffff00;
+    transition: all 1s ;
+}
+
+hole{
+    aspect-ratio: 1/1;
+    position:fixed;
+    background-color: #3f3f3f00;
+    margin-left: 1em;
+    height:2em;
+    border-radius:50%;
+    transition: all 1s;
+}
+
+hole:first-child{
+    margin-left: 3em;
+    margin-top: 1em;
+}
+hole:nth-child(2){
+    width: 2.9em;
+    height: 2.9em;
+    margin-left: 1.5em;
+    margin-top: 3.5em;
+}
+hole:last-child{
+    margin-left: 5em;
+    margin-top: 5em;
+}
+
+clouds{
+    position:relative;
+    aspect-ratio:1/1;
+    background-color: white;
+    color:white;
+    margin-left: 7em;
+    border-radius:50%;
+    height: 7em;
+    transition: all 0.7s;
+    box-shadow: 
+        -2em 3em, 
+        -6em 6em,
+        -9.5em 7em,
+        -1em -2em #C6C7DA,
+        -2em 2em #C6C7DA,
+        -6em 4.5em #C6C7DA
+}
+
+stars{
+    aspect-ratio: 1/1;
+    position:relative;
+    height:5em;
+    transition: all 1s;
+    margin-top:20em;
+    margin-left:-5em;
+}
+
+star{
+    aspect-ratio: 1/1;
+    position:absolute;
+    height:2em;
+    background:
+    radial-gradient(circle at top left, transparent 1em, white) top left,
+    radial-gradient(circle at top right, transparent 1em, white) top right,
+    radial-gradient(circle at bottom right, transparent 1em, white) bottom right,
+    radial-gradient(circle at bottom left, transparent 1em, white) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+star:first-child{
+    margin-top: -1em;
+    margin-left: 2em;
+}
+star:nth-child(2){
+    margin-top: -1em;
+    margin-left: 6em;
+}
+star:nth-child(3){
+    margin-top: 1em;
+    margin-left: 4em;
+}
+star:nth-child(4){
+    margin-top: 3.5em;
+    margin-left: 2em;
+}
+star:last-child{
+    margin-top: 3.5em;
+    margin-left: 6em;
+}
+
+
+div:hover{
+    background-color: #252850;
+    color: #252525;
+}
+
+div:hover circle {
+    margin-left: 4.5em;
+    transform: rotate(360deg);
+    background-color: gray;
+    box-shadow: inset -0.5em -0.5em 2em lightgrey,
+        0 0 1em 0.1em lightslategray;
+}
+
+div:hover hole {
+    background-color: #3f3f3fA0;
+}
+
+div:hover clouds{
+    margin-top:10em;
+}
+
+div:hover stars{
+    margin-top: 0em;
+    margin-left: 1em;
+}
+
